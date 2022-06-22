@@ -1,0 +1,18 @@
+#IDE project files
+.idea/
+
+#files
+robots.txt
+*.tgz
+*.sql
+*.tar
+*.gz
+*.tar.gz
+*.log
+*.bz2
+
+#folders
+/bitrix/*
+/upload/
+/_log/
+_polygon/

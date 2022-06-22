@@ -1,0 +1,43 @@
+[user]
+  # Имя, потом фамилия латинскими буквами
+  name = Maxim Kamerer
+  # Рабочий email(будет публично доступен всем, остерегайтесь спама)
+  email = mak@sim.com
+  
+[core]
+    # Текстовый редактор сообщения коммита:
+    # nano --- консольный(рекомендуется для начала)
+    # subl --- Sublime Text(если установлен)
+    # gedit --- графический Gnome Text Editor
+    # vim --- консольный(только для продвинутых пользователей)
+  editor = nano
+  # Автоматическая замена окончаний строк
+  # input --- для Linux или Mac
+  # true --- для Windows
+  autocrlf = input
+  excludesfile = ~/.gitexcludes
+  filemode = false
+
+[credential]
+  # Запоминание паролей при работе по HTTPS протоколу(не рекомендуется так работать никогда)
+  # cache --timeout 28800 --- в оперативной памяти на 8 часов(28800 секунд) 
+  # store --- в файле в домашней директории
+  helper = cache --timeout 28800
+
+[alias]
+
+  a = add
+  b = branch
+  f = fetch
+  l = log
+  m = merge
+  s = stash
+  t = tag
+  ci = commit
+  co = checkout
+  st = status
+  sm = submodule
+  tl = log --tags --no-walk --pretty='%Cblue%ci %Cgreen%d' --decorate=short
+  mnf = merge --no-ff
+  sup = submodule update
+  uci = reset --hard HEAD^
